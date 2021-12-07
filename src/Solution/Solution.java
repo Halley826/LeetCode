@@ -23,14 +23,18 @@ public class Solution {
         for (int i=0;i<n;i++){
             int other=target-nums[i];
             if(index.containsKey(other)&&index.get(other)!=i)
+            {
+                System.out.println(other);
+                System.out.println(index.get(other));
                 return new int[] {i,index.get(other)};
+            }
         }
         return new int[] {-1,-1};
     }
 
     public static void main(String[] args) {
         Solution solution=new Solution();
-        int[] ret=solution.twoSum(new int[]{6, 1, 4,3,9,9}, 4);
+        int[] ret=solution.twoSum(new int[]{6,1,1,1,1,4,2,2,9,9}, 4);
 
         char[] arr1=new char[]{'a','b','c'};
         System.out.println(arr1);

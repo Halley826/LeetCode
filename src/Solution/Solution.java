@@ -35,7 +35,6 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution=new Solution();
         int[] ret=solution.twoSum(new int[]{6,1,1,1,1,4,2,2,9,9}, 4);
-
         char[] arr1=new char[]{'a','b','c'};
         System.out.println(arr1);
         System.out.println("ret:");

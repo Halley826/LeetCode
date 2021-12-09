@@ -1,7 +1,9 @@
 package Solution;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author halley
@@ -15,6 +17,32 @@ import java.util.Map;
  * @date 2021/12/7 10:02 上午
  */
 public class Solution {
+
+    /**
+     * @description: 判断是否有重复元素
+     * @author halley
+     * @date
+     * @version 1.0
+     */
+    public boolean containsDuplicate_1(int[] nums) {
+        HashMap <Integer,Integer> index=new HashMap<>();//HashMap
+        for (int num : nums) {
+            index.put(num,0);
+        }
+        return index.size()!= nums.length;
+    }
+
+    public boolean containsDuplicate_2(int[] nums) {
+        Set<Integer> set = new HashSet<Integer>();
+        for (int x : nums) {
+            if (!set.add(x)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     public int[] twoSum(int[] nums, int target) {
         int n=nums.length;
         HashMap <Integer,Integer> index=new HashMap<>();

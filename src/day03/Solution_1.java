@@ -9,6 +9,12 @@ import org.junit.Test;
  * @date 2021/12/9 9:23 上午
  */
 public class Solution_1 {
+
+    char leftOf(char c) {
+        if (c == '}') return '{';
+        if (c == ')') return '(';
+        return '[';
+    }
     public void moveZeroes(int[] nums) {//快慢指针，双指针
         int slow=0;
         int fast=0;

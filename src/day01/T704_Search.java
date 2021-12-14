@@ -8,7 +8,7 @@ package day01;
  * 链接：https://leetcode-cn.com/problems/binary-search
  * @date 2021/12/7 3:07 下午
  */
-class Solution {
+class T704_Search {
     public int search(int[] nums, int target) {
         int left=0,right=nums.length-1;
         int mid;
@@ -26,8 +26,8 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution=new Solution();
+        T704_Search t704Search =new T704_Search();
         int[] arr=new int[] {5};
-        System.out.println(solution.search(arr, 5));
+        System.out.println(t704Search.search(arr, 5));
     }
 }

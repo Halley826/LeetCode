@@ -8,7 +8,7 @@ import org.junit.Test;
  * @description: TODO
  * @date 2021/12/9 3:39 下午
  */
-public class Solution_4 {
+public class T53_MaxSubArray {
     int maxSubArray(int[] nums) {
         int n = nums.length;
         if (n == 0) return 0;

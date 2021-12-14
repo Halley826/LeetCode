@@ -1,8 +1,7 @@
-package Solution;
+package day01;
 
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -16,7 +15,7 @@ import java.util.Set;
  * 你可以按任意顺序返回答案。
  * @date 2021/12/7 10:02 上午
  */
-public class Solution {
+public class T217_ContainsDuplicate {
 
     /**
      * @description: 判断是否有重复元素
@@ -61,8 +60,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution=new Solution();
-        int[] ret=solution.twoSum(new int[]{6,1,1,1,1,4,2,2,9,9}, 4);
+        T217_ContainsDuplicate t217ContainsDuplicate =new T217_ContainsDuplicate();
+        int[] ret= t217ContainsDuplicate.twoSum(new int[]{6,1,1,1,1,4,2,2,9,9}, 4);
         char[] arr1=new char[]{'a','b','c'};
         System.out.println(arr1);
         System.out.println("ret:");

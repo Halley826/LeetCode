@@ -6,7 +6,7 @@ package day01;
  * @description: TODO
  * @date 2021/12/7 5:08 下午
  */
-class Solution_1 {
+class T35_SearchInsert {
     public int searchInsert(int[] nums, int target) {
         return left_bound(nums, target);
     }
@@ -32,9 +32,9 @@ class Solution_1 {
 
 
     public static void main(String[] args) {
-        Solution_1 solution_1=new Solution_1();
+        T35_SearchInsert t35SearchInsert =new T35_SearchInsert();
         int[] arr=new int[] {1,3,5,6};
-        System.out.println(solution_1.searchInsert(arr, 5));
+        System.out.println(t35SearchInsert.searchInsert(arr, 5));
     }
 }
 

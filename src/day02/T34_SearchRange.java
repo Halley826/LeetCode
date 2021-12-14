@@ -3,10 +3,13 @@ package day02;
 /**
  * @author halley
  * @version 1.0
- * @description: TODO
+ * @description: 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
+ *
+ * 如果数组中不存在目标值 target，返回 [-1, -1]。
+ *
  * @date 2021/12/8 11:12 上午
  */
-public class Solution_2 {
+public class T34_SearchRange {
     public int[] searchRange(int[] nums, int target) {
         int mid;
         int left_bound,right_bound;
@@ -34,9 +37,9 @@ public class Solution_2 {
     }
 
     public static void main(String[] args) {
-        Solution_2 solution_2=new Solution_2();
+        T34_SearchRange t34SearchRange =new T34_SearchRange();
         int[] arr=new int[]{};
-        arr=solution_2.searchRange(new int[] {1},0);
+        arr= t34SearchRange.searchRange(new int[] {1},0);
         for (int i : arr) {
             System.out.println(i);
         }

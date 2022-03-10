@@ -8,7 +8,7 @@ import org.junit.Test;
  * @description: TODO
  * @date 2021/12/13 4:15 下午
  */
-public class T73_setZeroes {
+public class T73_SetZeroes {
     public void setZeroes(int[][] matrix) {
         int m = matrix.length, n = matrix[0].length;
         boolean flagCol0 = false, flagRow0 = false;
@@ -46,7 +46,7 @@ public class T73_setZeroes {
                 matrix[0][j] = 0;
             }
         }
-    }
+    }//未成功
     @Test
     public void test_73(){
         setZeroes(new int[][]{{1,1,1},{1,0,1},{1,1,1}});
